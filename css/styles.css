@@ -1,0 +1,203 @@
+/* GENERALITES */
+@font-face {
+    font-family: "Poppins";
+    src: url("/fonts/poppins.ttf"), url("/fonts/Poppins-Medium.ttf");
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Poppins";
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.homepage{
+    width:100vw;
+    height:100vh; 
+    max-width: 100%;  
+}
+
+/* HEADER */
+
+header{
+    height: calc(100vh/5);
+}
+
+header .border-top{
+    height: 1rem;
+    width: 100vw;
+    background: linear-gradient(to right, #e7852f, #db5026, #e43812, #cc2571, #d928ce);
+}
+
+/* Navbar Box */
+.navbar-box{
+    display:flex;
+    font-size: 1.5rem;
+}
+
+.nav-title{
+    display: flex;
+}
+
+.navbar-box{
+    justify-content: space-between;
+    border-bottom: 0.1rem solid lightgray;
+}
+
+.nav-title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-title .fa-heart{
+    padding-right: 1rem;
+    padding-left: 2rem;
+}
+
+.nav-title .fa-heart:hover, .nav-title a:hover, .nav-links a:hover{
+    color: gray;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.nav-links a{
+    padding: 1rem;
+    font-weight: bold;
+}
+
+/* Searchbar box */
+.logo-searchbar-box{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.logo-searchbar-box a{
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.logo-searchbar-box img{
+    padding-left: 2rem;
+}
+.searchbar-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchbar-box,.searchbar-content{
+    height: 4rem;
+}
+
+.searchbar-content{
+    width: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #f2f2f2;  
+}
+
+/* Icônes */
+.fa-npm{
+    font-size: 5rem;
+}
+
+.fa-search{
+    color:gray;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+}
+
+/* Buttons */
+input[type="search"]{
+    border:none;
+    background:#f2f2f2;
+    height:3.8rem;
+    width:calc(50rem - 4.5rem);
+    border:none;
+    outline:none;
+    /* 50 correspond à la largeur de searchbar-content et 4.5 à celle de l'image*/
+}
+
+.btn-search{
+    background: black;
+    color:white;
+    height: 4rem;
+    font-weight: bold;
+    padding: 0.5rem 2.5rem;
+    cursor: pointer;
+}
+
+.sign-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-signup{
+    border-width: 0.1rem;
+    padding: 1rem 2rem;
+    margin-right: 2rem;
+}
+
+.btn-signin{
+    border:none;
+    padding-right: 2rem;
+}
+
+.btn-signup, .btn-signin{
+    cursor: pointer;
+    background: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+/* MAIN */
+
+main{
+    height:calc(100vh - (100vh/5));
+    width: 100vw;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 1.6rem;
+    text-align: center;
+    background-image: linear-gradient( 
+    270deg, rgba(176, 42, 42, .16) 0%, rgba(176, 42, 42, .56) 18.45%, rgba(176, 42, 42, .8) 49.67%, rgba(176, 42, 42, .56) 82.52%, rgba(176, 42, 42, .196364) 99.7%, rgba(189, 40, 40, 0) 99.71%, rgba(203, 56, 55, 0) 99.72%, rgba(203, 56, 55, .16) 99.73%), url("/images/bg-img.png");
+}
+    /* background: linear-gradient(to bottom right, #d928ce, #cc2571,#e43812,#db5026,#e7852f);
+    color: white; */
+
+main h1{
+    font-size: 7.5rem;
+    text-align: center;
+    padding: 9rem 0 6rem 0;
+}
+
+main p{
+    line-height: 1.4;
+    padding-bottom:2rem;
+}
